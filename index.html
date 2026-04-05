@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div>
+          <h1>To Do List</h1>
+          <p>Tambahkan tugas harian kamu dan tandai selesai.</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span>Total</span>
+            <strong id="totalCount">0</strong>
+          </div>
+          <div class="stat">
+            <span>Selesai</span>
+            <strong id="doneCount">0</strong>
+          </div>
+          <div class="stat">
+            <span>Tersisa</span>
+            <strong id="pendingCount">0</strong>
+          </div>
+        </div>
+      </div>
+      <div class="input-group">
+        <form id="taskForm">
+          <input id="taskInput" class="task-input" type="text" placeholder="Tambahkan tugas baru..." autocomplete="off" />
+          <button type="submit" class="btn-add">Tambah Tugas</button>
+        </form>
+      </div>
+      <div class="list" id="taskList">
+        <div class="empty" id="emptyState">Belum ada tugas. Tambahkan tugas baru untuk mulai.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
